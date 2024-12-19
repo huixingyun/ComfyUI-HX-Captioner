@@ -1,0 +1,4 @@
+{
+    "ollama_models":["llama3.2-vision","llava","moondream"],
+    "ollama_url":"http://127.0.0.1:11434"
+}
