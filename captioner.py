@@ -82,9 +82,9 @@ class CaptionerNode:
 
 
 NODE_CLASS_MAPPINGS = {
-    "OllamaCaptioner": CaptionerNode
+    "HXOllamaCaptioner": CaptionerNode
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "OllamaCaptioner": "HX Ollama Captioner"
+    "HXOllamaCaptioner": "HX Ollama Captioner"
 }
