@@ -1,0 +1,15 @@
+[project]
+name = "hx-captioner"
+description = "A ComfyUI plugin library based on [a/https://github.com/stavsap/comfyui-ollama](https://github.com/stavsap/comfyui-ollama), with the Ollama cluster provided by Huixingyun."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["ollama", "numpy", "httpx"]
+
+[project.urls]
+Repository = "https://github.com/huixingyun/ComfyUI-HX-Captioner"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-HX-Captioner"
+Icon = ""
