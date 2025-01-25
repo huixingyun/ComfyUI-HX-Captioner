@@ -3,6 +3,7 @@ import os
 import json
 import numpy as np
 from ollama import Client
+import httpx
 from PIL import Image
 from io import BytesIO
 from typing import List, Any
@@ -68,8 +69,8 @@ class CaptionerNode:
             images_binary.append(img_binary)
         
         options = {"seed": seed,}
-        
-        client = Client(host=get_ollama_url())
+
+        client = Client(host=get_ollama_url(), timeout=httpx.Timeout(60.0))
         response = client.generate(
             model   = ollama_model, 
             prompt  = query, 
